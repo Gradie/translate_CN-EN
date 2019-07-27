@@ -13,6 +13,13 @@ public class consoleMain {
             System.out.println(mt.translate());
             System.out.println(mt.transInfo());
 
+            apiiDictTranslator adt = new apiiDictTranslator(toLookup);
+            System.out.println(adt.translate());
+            System.out.println(adt.transInfo());
+
+            youdaoXMLtranslator yxt = new youdaoXMLtranslator(toLookup);
+            System.out.println(yxt.translate());
+            System.out.println(yxt.transInfo());
 
         }catch (Exception e){
             e.printStackTrace();
